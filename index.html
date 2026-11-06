@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadania JavaScript</title>
+</head>
+
+<body style="background-color: beige;">
+
+<h2>SUMA</h2>
+<input type="number" id="suma1" placeholder="Pierwsza liczba">
+<input type="number" id="suma2" placeholder="Druga liczba">
+<button onclick="SUMA(document.getElementById('suma1').value, document.getElementById('suma2').value)">Oblicz sumę</button>
+<div id="wynikSuma"></div>
+
+<hr>
+
+<h2>PODSTAWY</h2>
+<input type="number" id="pod1" placeholder="Pierwsza liczba">
+<input type="number" id="pod2" placeholder="Druga liczba">
+<button onclick="PODSTAWY()">Oblicz</button>
+<div id="wynikPodstawy"></div>
+
+<hr>
+
+<h2>KALKULATOR</h2>
+<input type="number" id="kal1" placeholder="Pierwsza liczba">
+<input type="number" id="kal2" placeholder="Druga liczba">
+
+<select id="dzialanie">
+    <option value="suma">Suma</option>
+    <option value="roznica">Różnica</option>
+    <option value="iloczyn">Iloczyn</option>
+    <option value="iloraz">Iloraz</option>
+</select>
+
+<button onclick="KALKULATOR()">Oblicz</button>
+<div id="wynik"></div>
+
+<hr>
+
+<h2>MAKS</h2>
+<input type="number" id="maks1" placeholder="Pierwsza liczba">
+<input type="number" id="maks2" placeholder="Druga liczba">
+<input type="number" id="maks3" placeholder="Trzecia liczba">
+<button onclick="MAKS()">Znajdź największą</button>
+<div id="wynikMaks"></div>
+
+<hr>
+
+<h2>WZROST</h2>
+<input type="number" id="wzrost" placeholder="Wzrost w cm">
+<button onclick="WZROST()">Sprawdź wzrost</button>
+<div id="wynikWzrost"></div>
+
+<hr>
+
+<h2>BMI</h2>
+<input type="number" id="bmiWzrost" placeholder="Wzrost w cm">
+<input type="number" id="bmiWaga" placeholder="Waga w kg">
+<button onclick="BMI()">Oblicz BMI</button>
+<div id="wynikBMI"></div>
+
+<hr>
+
+<h2>STARSZY</h2>
+<label>Data urodzenia pierwszej osoby:</label>
+<input type="date" id="data1">
+<br><br>
+
+<label>Data urodzenia drugiej osoby:</label>
+<input type="date" id="data2">
+<br><br>
+
+<button onclick="STARSZY()">Sprawdź</button>
+
+<hr>
+
+<h2>PRZESTEPNY</h2>
+<input type="number" id="rok" placeholder="Podaj rok">
+<button onclick="PRZESTEPNY()">Sprawdź rok</button>
+
+<hr>
+
+<h2>SIŁA HASŁA</h2>
+<input type="password" id="haslo" placeholder="Wpisz hasło" oninput="SILA()">
+<div id="wynikHaslo"></div>
+
+<hr>
+
+<h2>TRÓJKĄT</h2>
+<input type="number" id="bok1" placeholder="Pierwszy bok">
+<input type="number" id="bok2" placeholder="Drugi bok">
+<input type="number" id="bok3" placeholder="Trzeci bok">
+<button onclick="TROJKAT()">Sprawdź trójkąt</button>
+
+<hr>
+
+<h2>SZYFR</h2>
+<input type="text" id="tekst" placeholder="Wpisz tekst" oninput="SZYFR()">
+<span id="zaszyfrowany"></span>
+
+<script src="script.js"></script>
+
+</body>
+</html>
